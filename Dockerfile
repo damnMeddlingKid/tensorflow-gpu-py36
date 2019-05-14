@@ -20,6 +20,7 @@ RUN python3.6 -m pip install --no-cache-dir -U setuptools
 # also useful
 RUN python3.6 -m pip install --no-cache-dir ipython requests numpy pandas quandl
 RUN python3.6 -m pip install --no-cache-dir tensorflow-gpu==1.3.0rc0
+RUN python3.6 -m pip install --no-cache-dir tensorboard==1.13.1
 RUN ln -s /usr/bin/python3.6 /usr/bin/python
 
 CMD ["ipython"]
